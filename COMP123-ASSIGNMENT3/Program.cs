@@ -8,7 +8,7 @@ using System.Threading.Tasks;
  * Date: July 7, 2016
  * StudentID: 300880309
  * Description: This Program creates a Giant Planet and Terrestrial Planet
- * Version: 0.01 - Added Header Comment
+ * Version: 0.02 - Added WaitForAnyKey Method Comment
  */
 
 namespace COMP123_ASSIGNMENT3
@@ -25,8 +25,15 @@ namespace COMP123_ASSIGNMENT3
 
             WaitForAnyKey();
         }
-
-       private static void WaitForAnyKey()
+        /**
+         * <summary>
+         * Utility method to wait for a console key press from the user 
+         * </summary>
+         * 
+         * @method WaitForAnyKey
+         * @returns {void}
+         */
+        private static void WaitForAnyKey()
         {
             Console.WriteLine();
             Console.WriteLine("++++++++++++++++++++++++++++");
