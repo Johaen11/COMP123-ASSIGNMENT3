@@ -12,6 +12,13 @@ namespace COMP123_ASSIGNMENT3
         private bool _oxygen;
 
         // CONSTRUCTORS +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        /**
+        * <summary>
+        * This is the default constructor for the TerrestrialPlanet class
+        * </summary>
+        * 
+        * @constructor Deck
+        */
         public TerrestrialPlanet(string name, double diameter, double mass,bool oxygen):base(name, diameter, mass)
         {
             this._oxygen = oxygen;

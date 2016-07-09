@@ -8,19 +8,31 @@ using System.Threading.Tasks;
  * Date: July 7, 2016
  * StudentID: 300880309
  * Description: This Program creates a Giant Planet and Terrestrial Planet
- * Version: 0.02 - Added WaitForAnyKey Method Comment
+ * Version: 0.03 - Final Version
  */
 
 namespace COMP123_ASSIGNMENT3
 {
+    /**
+    * This class is the "driver" class for my Program
+    * 
+    * @class Program
+    */
     class Program
     {
+        /**
+        * the main method for my driver class Program
+        * 
+        * @method Main
+        * @param {sting[]} args
+        * @returns {void}
+        */
         static void Main(string[] args)
         {
-            GiantPlanet giantPlanet = new GiantPlanet("df", 23, 11, "ok");
+            GiantPlanet giantPlanet = new GiantPlanet("Jupiter", 23, 11, "Gas");
             Console.WriteLine(giantPlanet.ToString());
            
-            TerrestrialPlanet terrestrialPlanet = new TerrestrialPlanet("",23,55,true);
+            TerrestrialPlanet terrestrialPlanet = new TerrestrialPlanet("Earth",23,55,true);
             Console.WriteLine(terrestrialPlanet.ToString());
 
             WaitForAnyKey();
