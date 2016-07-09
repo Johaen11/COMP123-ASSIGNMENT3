@@ -7,8 +7,11 @@ namespace COMP123_ASSIGNMENT3
 {
     public class TerrestrialPlanet : Planet, IHasMoons, IHabitable
     {
+        // PRIVATE INSTANCE VARIABLES (FIELDS) +++++++++++++++++++++++++++++++++++++++++++
+
         private bool _oxygen;
 
+        // CONSTRUCTORS +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         public TerrestrialPlanet(string name, double diameter, double mass,bool oxygen):base(name, diameter, mass)
         {
             this._oxygen = oxygen;

@@ -7,7 +7,11 @@ namespace COMP123_ASSIGNMENT3
 {
     public class GiantPlanet : Planet, IHasRings, IHasMoons
     {
+        // PRIVATE INSTANCE VARIABLES (FIELDS) +++++++++++++++++++++++++++++++++++++++++++
+
         private string _type;
+       
+
 
         public GiantPlanet(string name, double diameter, double mass, string type):base(name, diameter, mass)
         {

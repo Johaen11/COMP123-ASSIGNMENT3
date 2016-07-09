@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace COMP123_ASSIGNMENT3
 {
+
     public abstract class Planet
     {
+
+        // PRIVATE INSTANCE VARIABLES (FIELDS) +++++++++++++++++++++++++++++++++++++++++++
         private double _diameter;
         private double _mass;
         private int _moonCount;
@@ -16,12 +19,15 @@ namespace COMP123_ASSIGNMENT3
         private int _ringCount;
         private double _rotationPeriod;
 
+        // CONSTRUCTORS +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         public Planet(string name, double diameter, double mass)
         {
            this._name = name;
            this._diameter = diameter;
            this._mass = mass;
         }
+
+        // PUBLIC PROPERTIES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
         public double Diameter
         {
@@ -102,7 +108,7 @@ namespace COMP123_ASSIGNMENT3
                 this._rotationPeriod = value;
             }
         }
-        
+        //OVERRIDE TOSTRING METHOD
         public override string ToString()
         {
             return string.Format("Name:{0} Diameter: {1}   Mass: {2}", _name, _diameter, _mass);
